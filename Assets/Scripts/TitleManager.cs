@@ -18,7 +18,7 @@ public class TitleManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene("Gameplay");
+            SceneManager.LoadScene("mapanou2");
         }
     }
 }
