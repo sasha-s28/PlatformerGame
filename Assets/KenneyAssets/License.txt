@@ -1,5 +1,3 @@
-	
-
 	Platformer Pack: Industrial
 
 	by  Kenney Vleugels (Kenney.nl)

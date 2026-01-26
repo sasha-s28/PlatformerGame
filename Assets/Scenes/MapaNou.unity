@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -843.83984, y: 13.67}
+  m_AnchoredPosition: {x: -843.83984, y: 158}
   m_SizeDelta: {x: 494.6, y: 139.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1105861
@@ -626,7 +626,7 @@ PrefabInstance:
     - target: {fileID: 6514962039517517930, guid: c4190791b3ec6d84c9ad9c482b91063f,
         type: 3}
       propertyPath: m_Name
-      value: terra
+      value: Terra
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -766,7 +766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 309444052}
   m_Layer: 0
-  m_Name: cohet (1)
+  m_Name: Cohet(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1929,7 +1929,7 @@ GameObject:
   - component: {fileID: 1450253574}
   - component: {fileID: 1450253575}
   m_Layer: 0
-  m_Name: updatescore
+  m_Name: UpdateScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2457,7 +2457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1736113390}
   m_Layer: 0
-  m_Name: cohet
+  m_Name: Cohet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

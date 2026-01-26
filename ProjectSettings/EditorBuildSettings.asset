@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Ending.unity
     guid: b8be3be2bfe13624187950aaee3229b9
   - enabled: 1
-    path: Assets/Scenes/mapanou2.unity
+    path: Assets/Scenes/MapaNou.unity
     guid: 8a065a96e995ade48993faba613464f8
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
