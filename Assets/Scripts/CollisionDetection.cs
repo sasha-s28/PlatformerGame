@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class CollisionDetection : MonoBehaviour
 {
@@ -65,7 +61,7 @@ public class CollisionDetection : MonoBehaviour
     {
         CheckGrounded();
         CheckPlatformed();
-        CheckFront();
+        // CheckFront();
     }
 
     private void CheckFront()
@@ -87,9 +83,6 @@ public class CollisionDetection : MonoBehaviour
         var colliders = Physics2D.OverlapCircleAll(GroundCheckPoint.position, checkRadius, WhatIsGround);
 
         isGrounded =  (colliders.Length > 0);
-
-        //if (!wasGrounded && isGrounded) SendMessage("OnLanding");
-        //wasGrounded = isGrounded;
     }
 
     private void CheckPlatformed()
@@ -98,9 +91,6 @@ public class CollisionDetection : MonoBehaviour
 
         isPlatformGround = (colliders.Length > 0);
         if (isPlatformGround) CurrentPlatform = colliders[0].transform;
-
-        //if (!wasGrounded && isGrounded) SendMessage("OnLanding");
-        //wasGrounded = isGrounded;
     }
 
     private void CheckDistanceToGround()
