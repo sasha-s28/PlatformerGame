@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::coin
   CoinValue: 10
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
 --- !u!58 &47569520
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -370,12 +370,9 @@ GameObject:
   - component: {fileID: 155923687}
   - component: {fileID: 155923686}
   - component: {fileID: 155923689}
-<<<<<<< HEAD
-=======
   - component: {fileID: 155923688}
   - component: {fileID: 155923691}
   - component: {fileID: 155923690}
->>>>>>> 5928afc8a7cf7271cb54325bf90cac31f47343b0
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -567,6 +564,34 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &155923688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155923679}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4929439fc38d861449227a22db1abcb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionDetection
+  WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+  WhatIsPlatform:
+    serializedVersion: 2
+    m_Bits: 1024
+  GroundCheckPoint: {fileID: 0}
+  FrontCheckPoint: {fileID: 0}
+  RoofCheckPoint: {fileID: 0}
+  CurrentPlatform: {fileID: 0}
+  isGrounded: 0
+  isTouchingFront: 0
+  isPlatformGround: 0
+  isTouchingRoof: 0
+  distanceToGround: 0
+  groundAngle: 0
 --- !u!114 &155923689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,19 +604,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0cd2d3262409147b5add3f69ba48eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
   JumpHeight: 3
   DistanceToMaxHeight: 2
   SpeedHorizontal: 1
   PressTimeToMaxJump: 1
-  GroundLayers:
-    serializedVersion: 2
-    m_Bits: 1280
-  GroundCheck: {fileID: 1827970254}
-  CheckBoxSize: {x: 0.6, y: 0.1}
   WallSlideSpeed: 1
-<<<<<<< HEAD
-=======
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -719,7 +737,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
->>>>>>> 5928afc8a7cf7271cb54325bf90cac31f47343b0
 --- !u!4 &177118065 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1320736511707901435, guid: c5d186d23c8342247805f22f9f6be60a,
@@ -911,7 +928,7 @@ Transform:
   m_GameObject: {fileID: 254180827}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.57, z: 0}
+  m_LocalPosition: {x: 0, y: 0.192, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1537,7 +1554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::coin
   CoinValue: 25
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
 --- !u!58 &634763175
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2054,7 +2071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::coin
   CoinValue: 50
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
 --- !u!58 &1080147809
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2612,7 +2629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::coin
   CoinValue: 10
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
 --- !u!212 &1555063553
 SpriteRenderer:
   serializedVersion: 2
@@ -3239,16 +3256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeb352792163a74d96dd961a099d8f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeathTrigger
-<<<<<<< HEAD
---- !u!4 &1827970254 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1070113803192327549, guid: c4190791b3ec6d84c9ad9c482b91063f,
-    type: 3}
-  m_PrefabInstance: {fileID: 212505195}
-  m_PrefabAsset: {fileID: 0}
-=======
-  playerSoundController: {fileID: 0}
->>>>>>> 5928afc8a7cf7271cb54325bf90cac31f47343b0
+  playerSoundController: {fileID: 155923690}
 --- !u!4 &1853819850 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1320736511707901435, guid: c5d186d23c8342247805f22f9f6be60a,
@@ -3480,7 +3488,7 @@ Transform:
   m_GameObject: {fileID: 1918508235}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.58, z: 0}
+  m_LocalPosition: {x: 0, y: -0.195, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

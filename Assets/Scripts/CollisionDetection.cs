@@ -74,6 +74,7 @@ public class CollisionDetection : MonoBehaviour
 
         isTouchingFront = (colliders.Length > 0);
     }
+
     private void CheckRoof()
     {
         var colliders = Physics2D.OverlapCircleAll(RoofCheckPoint.position, checkRadius, WhatIsGround);
