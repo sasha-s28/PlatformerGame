@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::coin
   CoinValue: 10
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
 --- !u!58 &47569520
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0cd2d3262409147b5add3f69ba48eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
   JumpHeight: 3
   DistanceToMaxHeight: 2
   SpeedHorizontal: 1
@@ -1554,7 +1554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::coin
   CoinValue: 25
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
 --- !u!58 &634763175
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2071,7 +2071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::coin
   CoinValue: 50
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
 --- !u!58 &1080147809
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2629,7 +2629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::coin
   CoinValue: 10
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
 --- !u!212 &1555063553
 SpriteRenderer:
   serializedVersion: 2
@@ -3256,7 +3256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeb352792163a74d96dd961a099d8f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeathTrigger
-  playerSoundController: {fileID: 0}
+  playerSoundController: {fileID: 155923690}
 --- !u!4 &1853819850 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1320736511707901435, guid: c5d186d23c8342247805f22f9f6be60a,
