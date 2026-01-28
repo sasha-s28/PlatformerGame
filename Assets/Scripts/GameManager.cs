@@ -1,27 +1,34 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            UnityEditor.EditorApplication.isPlaying = false;
-            Application.Quit();
-        }
-    }
+    public InputAction exitAction;
+
     private void OnEnable()
     {
+        exitAction.Enable();
+        exitAction.started += ExitGame;
+
         DeathTrigger.OnDeath += LoadEnding;
     }
 
     private void OnDisable()
     {
+        exitAction.started -= ExitGame;
+        exitAction.Disable();
+
         DeathTrigger.OnDeath -= LoadEnding;
+    }
+
+    private void ExitGame(InputAction.CallbackContext context)
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 
     private void LoadEnding()

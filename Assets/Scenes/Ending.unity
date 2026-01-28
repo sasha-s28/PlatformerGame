@@ -620,6 +620,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39351bec9dcc9cd4882a8ec81e3f967f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RestartManager
+  exitAction:
+    m_Name: Exit
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4e8476cc-bba0-4d1c-812f-f3392baeeccb
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f69ead69-0ebb-4f9a-abcc-1652e1ebe578
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Exit
+      m_Flags: 0
+    m_Flags: 0
+  restartAction:
+    m_Name: Restart
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: e597b203-6a10-4429-abcf-99e60ed20f40
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: d79a4962-13ac-40dd-a707-69f588f535de
+      m_Path: <Keyboard>/enter
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Restart
+      m_Flags: 0
+    m_Flags: 0
 --- !u!1 &2137077894
 GameObject:
   m_ObjectHideFlags: 0
