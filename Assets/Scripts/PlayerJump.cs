@@ -18,6 +18,9 @@ public class PlayerJumper : MonoBehaviour
     private float lastVelocityY;
     private float jumpStartedTime;
     private bool isGrounded;
+    
+    private int maxJumps = 1;
+    private int jumpsUsed;
 
     bool IsWallSliding => collisionDetection.IsTouchingFront;
 
@@ -38,11 +41,17 @@ public class PlayerJumper : MonoBehaviour
 
     private void CheckGrounded()
     {
+        bool wasGrounded = isGrounded;
         isGrounded = collisionDetection.IsGrounded;
+
+        if(!wasGrounded && isGrounded) jumpsUsed = 0;
     }
+
     public void OnJumpStarted()
     {
-        if (!isGrounded) return;
+        if (jumpsUsed >= maxJumps) return;
+
+        if (!isGrounded && jumpsUsed == 0) return;
         
         SetGravity();
         var velocity = new Vector2(rigidbody.linearVelocity.x, GetJumpForce());
@@ -103,5 +112,10 @@ public class PlayerJumper : MonoBehaviour
         Physics2D.Raycast(transform.position, Vector2.down, filter, hit, 10);
 
         return hit[0].distance;
+    }
+
+    public void EnableDoubleJump()
+    {
+        maxJumps = 2;
     }
 }
